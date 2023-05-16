@@ -1,0 +1,260 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+/* BASIC RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --main-color1:#103E34ff;
+    --black: #AE7953ff;
+    --bg: rgb(64, 58, 58);
+    --border:.1rem solid rgba(255,255,255,.3);
+    --box-shadow-1: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --box-shadow-2: 0 5px 15px #103E34ff;
+    --primary-color: #000;
+}
+body {
+    background: linear-gradient(#103E34ff, #AE7953ff, #DFD7D9ff);
+    box-shadow: 0 5px 15px #AE7953ff;
+}
+.logo{
+    color: rgb(2, 23, 18);
+    font-size: 20px;
+    font-family: 'lato';   
+}
+
+.logo1{
+    
+    color: rgba(255,255,255,.3);   
+}
+
+.img-box img{
+    width: 100%;
+    height: 100%;
+}
+.icon img{
+   width: 20px; 
+   object-fit: cover;
+}
+section{
+    position: relative;
+    min-height: 100vh;
+    background: #103E34ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 500ms;
+}
+section.active{
+    background: var(--main-color1);
+}
+section .container{
+    position: relative;
+    width: 900px;
+    height: 500px;
+    background: #fff;
+    box-shadow: 0 10px 40px var(--box-shadow-1);
+    overflow: hidden;
+}
+section .user{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+section .img-box{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    transition: 500ms;
+}
+section .img-box img{
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+section .form-box{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #AE7953ff;
+    transition: 500ms;
+}
+section .form-box .top{
+    position: absolute;
+    top: 14px;
+    right: 14px;
+}
+section .form-box .top p{
+    font-size: 13px;
+    color: var(--main-color1);
+}
+section .form-box .top span{
+    color: var(--main-color1);
+    cursor: pointer;
+}
+
+section form{
+   position: absolute; 
+   top: 55%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+} 
+section form .form-contorl:first-child{
+    text-align: center;
+}
+.user-form.show {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+
+section form .form-contorl:first-child input{
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    text-indent: 16px;
+    width: 100%;
+    color: var(--main-color1);
+    outline: none;
+}  
+input[type="name"],
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 10px 0;
+    border: none;
+    text-indent: 16px;
+    color: var(--main-color1);
+    outline: none;
+    margin:  5px 0;
+    line-height: 40px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-2);
+    font-family: 'roboto', sans-serif;
+}
+section form .form-contorl:first-child input[type="submit"]{
+    display: block;
+    text-align: center;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: var(--main-color1);
+    color: #fff;
+    transition: 500ms;
+}
+section  .form-contorl:first-child  h2{
+   width: 100%;
+   font-weight: 400;
+   font-size: 26px;
+   color: #103E34ff;
+}
+section  .form-contorl:first-child  p{
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #103E34ff;
+}
+section  .form-contorl:first-child  span{
+    font-size: 13px;
+    display: block;
+    text-align: right;
+    margin-bottom: 20px;
+    color: var(--main-color1);
+}
+section  .form-contorl:first-child div{
+    position: relative;
+
+}
+section  .form-contorl:first-child .icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1rem;
+    cursor: pointer;
+}
+
+
+/* functionality */
+section .container .signup{
+    pointer-events: none;
+}
+section .container.active .signup{
+    pointer-events: initial;
+}
+section .container .signup .form-box{
+    top: 100%;
+}
+section .container.active .signup .form-box{
+    top: 0;
+}
+section .container .signup .img-box{
+   top: -100%;
+}
+section .container.active .signup .img-box{
+  top: 0;
+}
+section .container .login .form-box{
+    top: 0;
+}
+section .container.active .login .form-box{
+    top: 100%;
+}
+section .container .login .img-box{
+    top: 0;
+}
+section .container.active .login .img-box{
+    top: -100%;
+}
+section .container .signup .form-box{
+    background-color: #103E34ff;
+}
+section  .container  .signup .form-contorl:first-child  h2{
+    color: #AE7953ff ;
+}
+ section  .container .signup .form-contorl:first-child  p{
+     color: #AE7953ff;
+}
+
+
+
+
+
+@media (max-width: 996px) {
+    section .container{
+        max-width: 400px;
+    }
+    section .container .img-box{
+        display: none;
+    }
+    section .container .form-box{
+        width: 100%;
+    }
+    section .container.active .login .form-box{
+      top: -100%;  
+    }
+}
+
+@media (max-width: 567px) {
+   section{
+    padding: 0 30px;
+   }
+}
+

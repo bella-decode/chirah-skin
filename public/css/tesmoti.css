@@ -1,0 +1,110 @@
+
+.t-text{
+    position: relative;
+    bottom: 15rem;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'lato';
+    font-weight: 600;
+    color: rgb(12, 50, 7);
+}
+
+.tesmi .image{
+    height: 140px;
+    width: 140px ;
+    object-fit: cover;
+    border-radius: 50%;
+} 
+
+.img-area {
+	width: 140px;
+	height: 140px;
+    margin: 30px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: inset 8px #103E34ff;
+}
+
+.container3{
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    bottom: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(113, 99, 85, 0.578);
+    margin: 0;
+    padding: 0;
+}
+.tesmi{
+    position: relative;
+    max-width: 900px;
+    width: 70%;
+    padding: 50px 0;
+    row-gap: 30px;
+    overflow: hidden;
+    
+}
+.slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.slide p{
+    padding: 0 100px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(78, 80, 77);
+
+}
+.slide .quote-icon{
+    font-size: 30px; 
+    color: var(--main-color);
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+.title{
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #333;
+}
+.nav-bt{
+    height: 40px;
+    width: 40px;
+    transition: 0.5; 
+    
+}
+.nav-bt::after,
+.nav-bt::before {
+    font-size: 10px;
+    color: var(--main-color);
+}    
+.nav-btn:hover{
+    background-color: var(--main-color);
+}
+
+
+
+
+@media screen and (max-width: 768px){
+    .nav-bt::after,
+    .nav-bt::before {
+    display: none;
+}  
+    .slide p{
+      padding: 0 20px;  
+    }
+}
+

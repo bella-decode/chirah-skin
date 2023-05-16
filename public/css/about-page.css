@@ -1,0 +1,22 @@
+:root{
+    --main-color1:#103E34ff;
+    --black: #AE7953ff;
+    --bg: rgb(64, 58, 58);
+    --border:.1rem solid rgba(255,255,255,.3);
+    --box-shadow-1: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --box-shadow-2: 0 5px 15px #103E34ff;
+    --primary-color: #000;
+}
+
+.details1  .product-brand{
+     text-transform: capitalize;
+     font-size: 20px;
+     color: var(--main-color1);
+
+}
+
+.details1 .product-price{
+    font-family: 700;
+    font-size: 20px;
+    color: #103E34ff;
+}

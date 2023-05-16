@@ -1,0 +1,117 @@
+{
+    " products": [
+      {
+        "id": 1,
+        "title": "hair",
+        "price": "130",
+        "url": "/public/img/chriah2.jpg",
+        "category": "Dresses"
+      },
+      {
+        "id": 2,
+        "title": "Hair",
+        "price": "210",
+        "url": "/public/img/chriah2.jpg",
+        "category": "Dresses"
+      },
+      {
+        "id": 3,
+        "title": "Hair",
+        "price": "90",
+        "url": "/public/img/chirah-cart4.jpg",
+        "category": "Jewellery"
+      },
+      {
+        "id": 4,
+        "title": "Hair",
+        "price": "100",
+        "url": "/public/img/chirah-cart2.jpg",
+        "category": "Jewellery"
+      },
+      {
+        "id": 5,
+        "title": "Body",
+        "price": "100",
+        "url": "/public/img/chirah-cart1.jpg",
+        "category": "Dresses"
+      },
+      {
+        "id": 6,
+        "title": "Red",
+        "price": "50",
+        "url": "/public/img/chirah-cart4.jpg",
+        "category": "Accessories"
+      },
+      {
+        "id": 7,
+        "title": "Hair",
+        "price": "50",
+        "url": "/public/img/chriah2.jpg",
+        "category": "Footwear"
+      },
+      {
+        "id": 8,
+        "title": "Body",
+        "price": "300",
+        "url": "/public/img/chriah2.jpg",
+        "category": "Footwear"
+      },
+      {
+        "id": 9,
+        "title": "Cream",
+        "price": "300",
+        "url": "public/img/chirah-cart4.jpg",
+        "category": "Footwear"
+      },
+      {
+        "id": 10,
+        "title": "ROG",
+        "price": "300",
+        "url": "/public/img/chirah-cart.jpg",
+        "category": "Accessories"
+      },
+      {
+        "id": 11,
+        "title": "Body-lotion",
+        "price": "700",
+        "url": "/public/img/chirah-cart2.jpg",
+        "category": "Accessories"
+      },
+      {
+        "id": 12,
+        "title": "Body-White",
+        "price": "500",
+        "url": "/public/img/chirah-cart2.jpg",
+        "category": "cream"
+      },
+      {
+        "id": 13,
+        "title": "Body-lotion",
+        "price": "900",
+        "url": "public/img/chirah-cart4.jpg",
+        "category": "hair"
+      },
+      {
+        "id": 14,
+        "title": "Hair-cream",
+        "price": "100",
+        "url": "public/img/chirah-cart2.jpg",
+        "category": "hair"
+      },
+      {
+        "id": 15,
+        "title": "Hair-cream",
+        "price": "250",
+        "url": "/public/img/chirah-cart1.jpg",
+        "category": "hair"
+      },
+      {
+        "id": 16,
+        "title": "Body-lotion",
+        "price": "350",
+        "url": "/public/img/chirah-cart.jpg",
+        "category": "hair"
+      }
+    ]
+  }
+  
